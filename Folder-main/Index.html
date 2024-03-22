@@ -2,15 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Style-sheet/Stylee.css">
     <title>Lista de Notas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     
+    <div class="main">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <div class="perfil">
+            <h1>Hola, Soy tu Diario</h1>
+            <span>¡Vas a agregar todas tus notas aquí!</span>
+        </div>
     
+        <div class="agregar-nota">
+            <input type="text" id="input" placeholder="Título de la nota">
+            <i id="boton-enter" class="fas fa-plus-circle"></i>
+        </div>
 
+        <div class="contenido-nota">
+            <input type="text" id="input" placeholder="Descripción de tú nota">
+            <i id="boton-enter" class="fas fa-plus-circle"></i>
+        </div>
+    
+        <div class="seccion-nota">
+            <h3>Estás son tus Notas Pendientes, Recuérdalo!</h3>
+            <ul id="lista"></ul>
+        </div>
+    </div>
 
     <script src="/Folder-main/Script.js"></script>
 
