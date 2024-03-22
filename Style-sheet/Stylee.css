@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark: #000000;
+    --white: #fafafb;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+
+}
+
+body {
+    background-image: url(/assets/dairy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    object-fit: cover;
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+}
+
+.main {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 40px auto;
+}
+
+
+/* FECHA Y HORA */
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+
+/*AGREGAR TAREA*/
+.agregar-nota {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.agregar-nota input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding-left: 10px;
+
+}
+
+.agregar-nota input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(255, 32, 78, 0.6);
+}
+
+.agregar-nota i {
+    font-size: 40px;
+    color: rgb(255, 32, 78, 0.6);
+
+}
+
+.agregar-nota i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*DESCRIPCIÓN DE LA NOTA*/
+.contenido-nota {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.contenido-nota input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding-left: 10px;
+
+}
+
+.contenido-nota input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(255, 32, 78, 0.6);
+}
+
+.contenido-nota i {
+    font-size: 40px;
+    color: rgb(255, 32, 78, 0.6);
+
+}
+
+.contenido-nota i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*SECCION DE LA NOTA */
+.seccion-nota h3 {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.seccion-nota li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgb(255, 32, 78, 0.8), rgb(251, 168, 52, 0.8));
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--dark);
+    margin: 5px 0;
+
+}
+
+.seccion-nota i {
+    font-size: 25px;
+}
+
+.seccion-nota>ul p {
+    font-size: 1.2rem;
+
+}
+
+.seccion-nota i:hover {
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
