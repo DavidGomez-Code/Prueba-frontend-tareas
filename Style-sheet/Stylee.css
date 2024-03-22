@@ -65,7 +65,7 @@ body {
 }
 
 
-/*AGREGAR TAREA*/
+/*AGREGAR NOTA*/
 .agregar-nota {
     background-color: var(--white);
     border-radius: 15px;
@@ -172,11 +172,11 @@ body {
 }
 
 .seccion-nota i:hover {
-    color: var(--blue-light);
+    color: rgb(29, 36, 202);
     cursor: pointer;
 }
 
 .line-through {
     text-decoration: line-through;
-    color: var(--blue-light);
+    color: rgb(29, 36, 202);
 }
