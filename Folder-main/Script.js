@@ -1,6 +1,7 @@
 const lista = document.querySelector('#lista')
 const elemento = document.querySelector('#elemento')
 const input = document.querySelector('#input')
+const descripcion = document.querySelector('#descripcion-nota')
 const botonEnter = document.querySelector('#boton-enter')
 const check = 'fa-check-circle'
 const uncheck = 'fa-circle'
@@ -9,14 +10,13 @@ let LIST
 
 let id // para que inicie en 0 cada tarea tendra un id diferente
 
-//creacion de fecha actualizada 
-// Info date
+//Creación de la Fecha Actualizada  
 const dateNumber = document.getElementById('dateNumber');
 const dateText = document.getElementById('dateText');
 const dateMonth = document.getElementById('dateMonth');
 const dateYear = document.getElementById('dateYear');
 
-// Tasks Container
+// Tasks Main (container principal)
 const tasksContainer = document.getElementById('tasksContainer');
 
 const setDate = () => {
@@ -30,11 +30,10 @@ const setDate = () => {
 const renderOrderedTasks = () => {
     order().forEach(el => tasksContainer.appendChild(el))
 }
-
 setDate();
 
 
-// funcion de agregar tarea 
+// Función de Agregar Nota 
 function agregarTarea( tarea,id,realizado,eliminado) {
     if(eliminado) {return} // si existe eliminado es true si no es false 
 
@@ -54,28 +53,7 @@ function agregarTarea( tarea,id,realizado,eliminado) {
 }
 
 
-// funcion de agregar contenido
-
-function agregarContenido( contenido,id,realizado,eliminado) {
-    if(eliminado) {return} // si existe eliminado es true si no es false 
-
-    const REALIZADO = realizado ? check : uncheck // si realizado es verdadero check si no uncheck
-
-    const LINE = realizado ? lineThrough : '' 
-
-    const elemento = `
-                        <li id="elemento">
-                        <i class="far ${REALIZADO}" data="realizado" id="${id}"></i>
-                        <p class="text ${LINE}">${tarea}</p>
-                        <i class="fas fa-trash de" data="eliminado" id="${id}"></i> 
-                        </li>
-                    `
-    lista.insertAdjacentHTML("beforeend",elemento)
-
-}
-
-
-// funcion de Tarea Realizada 
+// Función de Nota Realizada 
 function tareaRealizada(element) {
     element.classList.toggle(check)
     element.classList.toggle(uncheck)
@@ -95,6 +73,7 @@ function tareaEliminada(element){
 }
 
 
+
 // crear un evento para escuchar el enter y para habilitar el boton
 botonEnter.addEventListener('click', ()=> {
     const tarea = input.value
@@ -112,6 +91,7 @@ botonEnter.addEventListener('click', ()=> {
     }
 
 })
+
 
 document.addEventListener('keyup', function (event) {
     if (event.key=='Enter'){

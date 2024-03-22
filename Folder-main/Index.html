@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Style-sheet/Stylee.css">
-    <title>Lista de Notas</title>
+    <title>Listado de Notas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body>
     
-    <div class="main">
+    <section class="main">
         <div class="date">
             <div class="dateRight">
                 <div id="dateNumber"></div>
@@ -36,17 +36,25 @@
         </div>
 
         <div class="contenido-nota">
-            <input type="text" id="input" placeholder="Descripción de tú nota">
+            <input type="text" id="descripcion-nota" placeholder="Descripción de tú nota">
             <i id="boton-enter" class="fas fa-plus-circle"></i>
         </div>
+
     
         <div class="seccion-nota">
             <h3>Estás son tus Notas Pendientes, Recuérdalo!</h3>
             <ul id="lista"></ul>
         </div>
-    </div>
+    </section>
 
     <script src="/Folder-main/Script.js"></script>
 
+    <!-- De todos los requerimientos que se piden para la app web de notas, no pude realizar}
+    los siguientes: 
+    1. Editar las notas existentes.
+    2. Marcarlas como favoritas.
+
+    * Los demás requerimientos si los implemente.  -->
+    
 </body>
 </html>
