@@ -75,7 +75,6 @@ function agregarContenido( contenido,id,realizado,eliminado) {
 }
 
 
-
 // funcion de Tarea Realizada 
 function tareaRealizada(element) {
     element.classList.toggle(check)
@@ -97,7 +96,6 @@ function tareaEliminada(element){
 
 
 // crear un evento para escuchar el enter y para habilitar el boton
-
 botonEnter.addEventListener('click', ()=> {
     const tarea = input.value
     if(tarea){
